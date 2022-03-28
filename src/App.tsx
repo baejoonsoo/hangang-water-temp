@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import * as S from "./style/mainPage";
 
 interface hangangDataType {
   temp: string;
@@ -29,7 +30,14 @@ function App() {
     getHangangData();
   }, []);
 
-  return <div>{hangangData.temp}</div>;
+  return (
+    <S.Page>
+      <S.HangangDataView>
+        <S.HangangBanner></S.HangangBanner>
+        <S.Temp>{hangangData.temp}°C</S.Temp>
+      </S.HangangDataView>
+    </S.Page>
+  );
 }
 
 export default App;
