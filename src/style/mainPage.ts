@@ -6,25 +6,37 @@ export const Page = styled.main`
 `;
 
 export const TempData = styled.div`
-  width: 100%;
+  width: auto;
   position: absolute;
   top: 0;
   left: 0;
-  margin: 250px 50px 200px 50px;
+  margin: 250px 50px 0px 50px;
+
+  p {
+    color: white;
+  }
 
   .topText {
-    color: white;
     font-weight: bold;
     font-size: 25px;
     margin: 0;
   }
+
   .temp {
     margin: 0;
-    color: white;
     font-size: 70px;
     font-weight: bolder;
-    width: 40%;
+    width: 400px;
     border-bottom: #f0f0f0 0.5px solid;
+  }
+
+  .time {
+    display: flex;
+    justify-content: end;
+  }
+
+  .time p {
+    justify-self: end;
   }
 `;
 

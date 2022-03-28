@@ -44,6 +44,9 @@ function App() {
         <S.TempData>
           <p className="topText">지금 한강은</p>
           <p className="temp">{hangangData.temp}°C</p>
+          <div className="time">
+            <p>{hangangData.time}</p>
+          </div>
         </S.TempData>
       </S.HangangTempData>
     </S.Page>
