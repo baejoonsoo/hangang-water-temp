@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hangang-water-temp/static/css/main.82ddc853.css",
+    "main.js": "/hangang-water-temp/static/js/main.95f869aa.js",
+    "index.html": "/hangang-water-temp/index.html",
+    "main.82ddc853.css.map": "/hangang-water-temp/static/css/main.82ddc853.css.map",
+    "main.95f869aa.js.map": "/hangang-water-temp/static/js/main.95f869aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82ddc853.css",
+    "static/js/main.95f869aa.js"
+  ]
+}
