@@ -32,6 +32,13 @@ function App() {
 
   return (
     <S.Page>
+      <S.Header>
+        <S.Logo src="img/Logo.svg" />
+        <S.Title>
+          <p className="title">지금 한강 온도는</p>
+          <p className="subTitle">{hangangData.station} 한강물 온도</p>
+        </S.Title>
+      </S.Header>
       <S.HangangTempData>
         <S.HangangImg />
         <S.TempData>
