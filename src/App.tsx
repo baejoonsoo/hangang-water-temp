@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+interface hangangDataType {
+  temp: string;
+  time: string;
+  station: string;
+  status: string;
+  type: string;
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [hangangData, setHangangData] = useState<hangangDataType>({
+    temp: "0",
+    time: "",
+    station: "",
+    status: "",
+    type: "",
+  });
+
+  const getHangangData = () => {
+    axios.get("https://api.hangang.msub.kr").then(({ data }) => {
+      console.log(data);
+      setHangangData(data);
+    });
+  };
+
+  useEffect(() => {
+    getHangangData();
+  }, []);
+
+  return <div>{hangangData.temp}</div>;
 }
 
 export default App;
