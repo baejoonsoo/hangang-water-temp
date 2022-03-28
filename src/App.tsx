@@ -32,10 +32,9 @@ function App() {
 
   return (
     <S.Page>
-      <S.HangangDataView>
-        <S.HangangBanner></S.HangangBanner>
+      <div>
         <S.Temp>{hangangData.temp}°C</S.Temp>
-      </S.HangangDataView>
+      </div>
     </S.Page>
   );
 }
