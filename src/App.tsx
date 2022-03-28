@@ -32,9 +32,13 @@ function App() {
 
   return (
     <S.Page>
-      <div>
-        <S.Temp>{hangangData.temp}°C</S.Temp>
-      </div>
+      <S.HangangTempData>
+        <S.HangangImg />
+        <S.TempData>
+          <p className="topText">지금 한강은</p>
+          <p className="temp">{hangangData.temp}°C</p>
+        </S.TempData>
+      </S.HangangTempData>
     </S.Page>
   );
 }
