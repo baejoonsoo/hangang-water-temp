@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import * as S from "./style/mainPage";
+import Logo from "./img/Logo.svg";
 
 interface hangangDataType {
   temp: string;
@@ -33,7 +34,7 @@ function App() {
   return (
     <S.Page>
       <S.Header>
-        <S.Logo src="img/Logo.svg" />
+        <S.Logo src={Logo} />
         <S.Title>
           <p className="title">지금 한강 온도는</p>
           <p className="subTitle">{hangangData.station} 한강물 온도</p>
