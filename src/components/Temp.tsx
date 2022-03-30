@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import * as S from "../style/mainPage";
 import Logo from "../img/Logo.svg";
+import LightSpeed from "react-reveal/LightSpeed";
+import Slide from "react-reveal/Slide";
 
 interface hangangDataType {
   temp: string;
@@ -43,8 +45,12 @@ function Temp() {
       <S.HangangTempData>
         <S.HangangImg />
         <S.TempData>
-          <p className="topText">지금 한강은</p>
-          <p className="temp">{hangangData.temp}°C</p>
+          <LightSpeed right cascade>
+            <p className="topText">지금 한강은</p>
+          </LightSpeed>
+          <Slide left>
+            <p className="temp">{hangangData.temp}°C</p>
+          </Slide>
           <div className="time">
             <p>{hangangData.time}</p>
           </div>
