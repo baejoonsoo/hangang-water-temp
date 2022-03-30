@@ -17,7 +17,7 @@ function Temp({ hangangData }: props) {
             <p className="topText">지금 한강은</p>
           </LightSpeed>
           <Slide left>
-            <p className="temp">{hangangData.station}°C</p>
+            <p className="temp">{hangangData.temp}°C</p>
           </Slide>
           <div className="time">
             <p>{hangangData.time}</p>
