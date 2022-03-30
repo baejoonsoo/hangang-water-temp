@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const Header = styled.header`
   height: 80px;
   width: 100vw;
-  margin-left: 10px;
+  padding-left: 10px;
   display: flex;
   align-items: center;
+
+  background-color: rgba(40, 40, 40, 0.5);
 
   position: fixed;
   top: 0;
@@ -32,7 +34,7 @@ export const Title = styled.div`
   }
   .subTitle {
     font-size: 12px;
-    color: #b0b0b0;
+    color: #dedede;
     font-weight: 600;
   }
 `;
