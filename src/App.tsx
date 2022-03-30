@@ -1,5 +1,5 @@
+import Header from "./components/\bheader";
 import Temp from "./components/Temp";
-import { Header } from "./style/mainPage";
 
 function App() {
   return (
