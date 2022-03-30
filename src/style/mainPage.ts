@@ -1,3 +1,4 @@
+import background from "../img/hangang.jpg";
 import styled from "styled-components";
 
 export const Page = styled.main`
@@ -46,7 +47,7 @@ export const HangangTempData = styled.div`
 
 export const HangangImg = styled.div`
   height: 100vh;
-  background-image: url("img/hangang.jpg");
+  background-image: url(${background});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: end;
