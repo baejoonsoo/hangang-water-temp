@@ -36,6 +36,11 @@ export const GithubIcon = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.2s;
+
+  :hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const FacebookIcon = styled(GithubIcon)`
