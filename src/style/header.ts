@@ -61,5 +61,10 @@ export const Nav = styled.nav`
 
     color: white;
     text-decoration: none;
+
+    :hover {
+      cursor: pointer;
+      color: #4263eb;
+    }
   }
 `;
