@@ -44,4 +44,9 @@ export const Content = styled.h3`
   padding: 8px 30px;
   width: fit-content;
   border-radius: 40px;
+  transition: 0.5s ease-in-out;
+
+  :hover {
+    transform: scale(1.12);
+  }
 `;
