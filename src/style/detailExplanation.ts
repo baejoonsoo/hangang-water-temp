@@ -24,11 +24,24 @@ export const HangangImg = styled.div`
     border-radius: 5px;
     border: 3px solid #fff;
     position: absolute;
-    left: 0;
-    /* top: 0; */
   }
 `;
 
 export const ContextDiv = styled.div`
-  width: 60%;
+  width: 55%;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+`;
+
+export const Content = styled.h3`
+  color: #22b8cf;
+  font-size: 26px;
+  background-color: white;
+  padding: 8px 30px;
+  width: fit-content;
+  border-radius: 40px;
 `;

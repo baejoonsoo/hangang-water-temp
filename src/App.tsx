@@ -31,7 +31,7 @@ function App() {
         <Temp hangangData={hangangData} />
       </div>
       <div id="explanation">
-        <DetailExplanation />
+        <DetailExplanation hangangData={hangangData} />
       </div>
     </div>
   );
