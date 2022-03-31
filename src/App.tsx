@@ -28,12 +28,12 @@ function App() {
   return (
     <div>
       <Header station={hangangData.station} />
-      <a id="temp" href="/#">
+      <div id="temp">
         <Temp hangangData={hangangData} />
-      </a>
-      <a id="explanation">
+      </div>
+      <div id="explanation">
         <DetailExplanation />
-      </a>
+      </div>
     </div>
   );
 }
