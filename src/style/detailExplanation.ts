@@ -15,12 +15,17 @@ export const Page = styled.main`
 export const HangangImg = styled.div`
   width: 40%;
   align-items: center;
+  position: relative;
   display: flex;
+
   img {
     margin: 0 5%;
     width: 90%;
     border-radius: 5px;
     border: 3px solid #fff;
+    position: absolute;
+    left: 0;
+    /* top: 0; */
   }
 `;
 
