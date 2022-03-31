@@ -18,7 +18,7 @@ export const HangangImg = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: -10vh;
+  margin-top: -15vh;
 `;
 
 export const MSG = styled.h1`
