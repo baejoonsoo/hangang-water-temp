@@ -12,11 +12,11 @@ const tempCheck = (temp: string) => {
   console.log(tempInt);
 
   if (tempInt > 20) {
-    return "오늘은 많이 따뜻하네요";
+    return "오늘은 물은 많이 따뜻하네요";
   } else if (tempInt >= 10) {
-    return "이 정도면 들어가기 좋겠다";
+    return "이 정도 온도면 들어가기 좋겠다";
   } else if (tempInt < 10) {
-    return "오늘은 많이 차가운데 조금만 기다려봐요";
+    return "오늘 물 많이 차가운데 조금만 기다려봐요";
   }
   return "error";
 };
