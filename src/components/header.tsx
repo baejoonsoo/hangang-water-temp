@@ -23,6 +23,9 @@ const Header = ({ station }: props) => {
         <Link to="explanation" spy={true} smooth={true}>
           <p>explanation</p>
         </Link>
+        <Link to="footer" spy={true} smooth={true}>
+          <p>developer</p>
+        </Link>
       </S.Nav>
     </S.Header>
   );

@@ -7,7 +7,9 @@ export const Footer = styled.footer`
   background-color: #495057;
   display: flex;
   padding: 5px 30px;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const DeveloperInfo = styled.div`
