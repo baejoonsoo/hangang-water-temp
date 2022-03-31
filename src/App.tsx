@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <Header station={hangangData.station} />
       <div id="temp">
         <Temp hangangData={hangangData} />
