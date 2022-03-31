@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 const DetailExplanation = () => {
   const imgRef = useRef<HTMLImageElement>(null);
 
-  useEffect(() => {
+  const onScroll = () => {
     window.addEventListener("scroll", (e: any) => {
       const value = window.scrollY - window.innerHeight + 10;
 
@@ -13,6 +13,10 @@ const DetailExplanation = () => {
         imgRef.current.style.left = value + "px";
       }
     });
+  };
+
+  useEffect(() => {
+    onScroll();
   }, []);
 
   return (
