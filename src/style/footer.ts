@@ -26,6 +26,7 @@ export const DeveloperInfo = styled.div`
 export const DeveloperName = styled.p`
   font-size: 20px;
   margin: 0;
+  font-weight: bolder;
 `;
 
 export const GithubIcon = styled.div`

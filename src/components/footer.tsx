@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <S.Footer>
       <S.DeveloperInfo>
-        <S.DeveloperName>baejoonsoo</S.DeveloperName>
+        <S.DeveloperName>BaeJoonSoo</S.DeveloperName>
         <a href="http://github.com/baejoonsoo">
           <S.GithubIcon />
         </a>
