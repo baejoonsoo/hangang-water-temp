@@ -1,4 +1,4 @@
-import background from "../img/hangang.jpg";
+import background from "../img/backgroundHangang.jpg";
 import styled from "styled-components";
 
 export const Page = styled.main`
