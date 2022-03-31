@@ -3,7 +3,6 @@ import githubIcon from "../img/github.png";
 import facebookIcon from "../img/facebook.png";
 
 export const Footer = styled.footer`
-  height: 200px;
   background-color: #495057;
   display: flex;
   padding: 5px 30px;
@@ -14,7 +13,7 @@ export const Footer = styled.footer`
 
 export const DeveloperInfo = styled.div`
   border-top: 2px #fff solid;
-  margin: 0px 20px 20px 20px;
+  margin: 20px;
   padding-top: 10px;
   width: 100%;
   justify-content: flex-end;
