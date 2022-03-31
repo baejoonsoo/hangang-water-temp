@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Header from "./components/header";
+import Header from "./components/\bheader";
 import DetailExplanation from "./components/detailExplanation";
 import Footer from "./components/footer";
 import Temp from "./components/Temp";
