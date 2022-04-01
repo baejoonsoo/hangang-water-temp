@@ -13,17 +13,17 @@ export const TempData = styled.div`
   left: 0;
   margin: 250px 50px 0px 50px;
 
-  p {
+  & p {
     color: white;
   }
 
-  .topText {
+  & .topText {
     font-weight: bold;
     font-size: 25px;
     margin: 0;
   }
 
-  .temp {
+  & .temp {
     margin: 0;
     font-size: 70px;
     font-weight: bolder;

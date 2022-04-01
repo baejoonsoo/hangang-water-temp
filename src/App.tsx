@@ -12,8 +12,6 @@ function App() {
     temp: "0",
     time: "",
     station: "",
-    status: "",
-    type: "",
   });
 
   const getHangangData = () => {
