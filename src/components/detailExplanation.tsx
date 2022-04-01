@@ -9,7 +9,6 @@ interface props {
 
 const tempCheck = (temp: string) => {
   const tempInt = parseFloat(temp);
-  console.log(tempInt);
 
   if (tempInt > 20) {
     return "오늘은 물은 많이 따뜻하네요";
