@@ -36,6 +36,8 @@ export const PhotoCard = styled.div`
   position: relative;
   border-radius: 10px;
   padding: 60px 0 30px 0;
+  filter: drop-shadow(0 0 5px #fff);
+
   display: grid;
 
   * {
