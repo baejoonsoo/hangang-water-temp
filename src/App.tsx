@@ -9,7 +9,7 @@ import { hangangDataType } from "./interface/hangangData";
 
 function App() {
   const [hangangData, setHangangData] = useState<hangangDataType>({
-    temp: "0",
+    temp: "",
     time: "",
     station: "",
   });

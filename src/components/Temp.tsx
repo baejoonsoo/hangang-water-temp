@@ -14,7 +14,13 @@ function Temp({ hangangData }: props) {
         <S.TempData>
           <p className="topText">지금 한강은</p>
           <Slide left>
-            <p className="temp">{hangangData.temp}°C</p>
+            <p className="temp">
+              {hangangData.temp !== ""
+                ? "점검중" === hangangData.temp
+                  ? "점검 중"
+                  : `${hangangData.temp}°C`
+                : "..."}
+            </p>
           </Slide>
           <div className="time">
             <p>{hangangData.time}</p>
