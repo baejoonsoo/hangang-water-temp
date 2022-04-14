@@ -3,6 +3,26 @@ export const Page = styled.section`
   height: 100vh;
   width: 100vw;
   background-color: #03005f;
+`;
+export const Explanation = styled.div`
+  padding: 100px 0px 40px 40px;
+
+  h1,
+  p {
+    margin: 0;
+  }
+  h1 {
+    border-bottom: 3px solid aliceblue;
+    font-size: 55px;
+    color: aliceblue;
+  }
+  p {
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: 10px;
+  }
+`;
+export const CardList = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;

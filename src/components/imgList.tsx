@@ -24,13 +24,21 @@ const cardData: { url: string; title: string; text: string }[] = [
 const ImgList = () => {
   return (
     <S.Page>
-      {cardData.map((data) => (
-        <S.PhotoCard>
-          <S.CardImg src={data.url} />
-          <h1>{data.title}</h1>
-          <p>{data.text}</p>
-        </S.PhotoCard>
-      ))}
+      <S.Explanation>
+        <h1>EXPLANATION</h1>
+        <p>
+          한강은 한반도 중부에 위치한 강으로, 대한민국의 국가 1급 하천 입니다.
+        </p>
+      </S.Explanation>
+      <S.CardList>
+        {cardData.map((data) => (
+          <S.PhotoCard>
+            <S.CardImg src={data.url} />
+            <h1>{data.title}</h1>
+            <p>{data.text}</p>
+          </S.PhotoCard>
+        ))}
+      </S.CardList>
     </S.Page>
   );
 };
