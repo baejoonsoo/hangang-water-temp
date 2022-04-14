@@ -4,6 +4,7 @@ import Header from "./components/\bheader";
 import DetailExplanation from "./components/detailExplanation";
 import Footer from "./components/footer";
 import HangangSymbol from "./components/hangangSymbol";
+import ImgList from "./components/imgList";
 import Temp from "./components/Temp";
 import { hangangDataType } from "./interface/hangangData";
 
@@ -33,6 +34,9 @@ function App() {
       </div>
       <div id="explanation">
         <DetailExplanation hangangData={hangangData} />
+      </div>
+      <div id="photoList">
+        <ImgList />
       </div>
       <div id="symbol">
         <HangangSymbol />

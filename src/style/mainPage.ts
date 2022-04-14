@@ -53,3 +53,7 @@ export const HangangImg = styled.div`
   background-position: end;
   filter: brightness(60%);
 `;
+
+export const Loading = styled.img`
+  height: 50px;
+`;
