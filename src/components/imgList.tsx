@@ -26,8 +26,9 @@ const ImgList = () => {
     <S.Page>
       {cardData.map((data) => (
         <S.PhotoCard>
-          <p>{data.title}</p>
           <S.CardImg src={data.url} />
+          <h1>{data.title}</h1>
+          <p>{data.text}</p>
         </S.PhotoCard>
       ))}
     </S.Page>

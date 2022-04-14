@@ -9,11 +9,40 @@ export const Page = styled.section`
 `;
 
 export const PhotoCard = styled.div`
+  @font-face {
+    font-family: "Cafe24Ssurround";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
   background-color: white;
+  border-radius: 10px;
+  padding: 60px 0 30px 0;
+  display: grid;
+
+  * {
+    font-family: "Cafe24Ssurround";
+    justify-self: center;
+    margin: 0;
+  }
+
+  h1 {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+  p {
+    margin-top: 5px;
+    color: #808080;
+    font-weight: bold;
+    font-size: 16px;
+  }
 `;
 
 export const CardImg = styled.div`
-  /* background-color: red; */
   width: 390px;
   height: 180px;
 
