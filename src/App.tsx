@@ -33,10 +33,10 @@ function App() {
       <div id="temp">
         <Temp hangangData={hangangData} />
       </div>
-      <div id="explanation">
+      <div id="tag">
         <DetailExplanation hangangData={hangangData} />
       </div>
-      <div id="photoList">
+      <div id="explanation">
         <ImgList />
       </div>
       <div id="symbol">

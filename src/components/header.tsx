@@ -20,6 +20,9 @@ const Header = ({ station }: props) => {
         <Link to="temp" spy={true} smooth={true}>
           <p>temp</p>
         </Link>
+        <Link to="tag" spy={true} smooth={true}>
+          <p>tag</p>
+        </Link>
         <Link to="explanation" spy={true} smooth={true}>
           <p>explanation</p>
         </Link>
