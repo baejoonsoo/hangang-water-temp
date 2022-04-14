@@ -16,6 +16,7 @@ function App() {
 
   const getHangangData = () => {
     axios.get("https://api.hangang.msub.kr").then(({ data }) => {
+      console.log(data);
       setHangangData(data);
     });
   };
