@@ -2,6 +2,7 @@ import * as S from "../style/imgList.ts";
 import hgPhoto1 from "../img/hgPhoto1.jpg";
 import hgPhoto2 from "../img/hgPhoto2.jpg";
 import hgPhoto3 from "../img/hgPhoto3.jpg";
+import Slide from "react-reveal/Slide";
 
 const cardData: { url: string; title: string; text: string }[] = [
   {
@@ -30,16 +31,18 @@ const ImgList = () => {
           한강은 한반도 중부에 위치한 강으로, 대한민국의 국가 1급 하천 입니다.
         </p>
       </S.Explanation>
-      <S.CardList>
-        {cardData.map((data) => (
-          <S.PhotoCard>
-            <S.CardImg src={data.url}></S.CardImg>
-            <h1>{data.title}</h1>
-            <p>{data.text}</p>
-            <div className="hearts" />
-          </S.PhotoCard>
-        ))}
-      </S.CardList>
+      <Slide bottom cascade>
+        <S.CardList>
+          {cardData.map((data) => (
+            <S.PhotoCard>
+              <S.CardImg src={data.url}></S.CardImg>
+              <h1>{data.title}</h1>
+              <p>{data.text}</p>
+              <div className="hearts" />
+            </S.PhotoCard>
+          ))}
+        </S.CardList>
+      </Slide>
     </S.Page>
   );
 };
