@@ -7,6 +7,7 @@ import HangangSymbol from "./components/hangangSymbol";
 import ImgList from "./components/imgList";
 import Temp from "./components/Temp";
 import { hangangDataType } from "./interface/hangangData";
+import "./style/font.css";
 
 function App() {
   const [hangangData, setHangangData] = useState<hangangDataType>({

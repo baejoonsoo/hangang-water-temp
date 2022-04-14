@@ -32,21 +32,6 @@ export const CardList = styled.div`
 `;
 
 export const PhotoCard = styled.div`
-  @font-face {
-    font-family: "Cafe24Ssurround";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
-      format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "LeferiPoint-WhiteObliqueA";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff")
-      format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-
   background-color: white;
   position: relative;
   border-radius: 10px;
