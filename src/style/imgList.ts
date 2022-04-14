@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import hearts from "../img/hearts.svg";
+
 export const Page = styled.section`
   height: 100vh;
   width: 100vw;
@@ -22,6 +24,7 @@ export const Explanation = styled.div`
     margin-top: 10px;
   }
 `;
+
 export const CardList = styled.div`
   display: flex;
   justify-content: space-around;
@@ -45,6 +48,7 @@ export const PhotoCard = styled.div`
   }
 
   background-color: white;
+  position: relative;
   border-radius: 10px;
   padding: 60px 0 30px 0;
   display: grid;
@@ -68,6 +72,23 @@ export const PhotoCard = styled.div`
     font-weight: bold;
     font-size: 16px;
   }
+  & .hearts {
+    transition: 0.3s;
+    z-index: 3;
+    width: 100px;
+    height: 50px;
+    opacity: 0;
+    position: absolute;
+    background-image: url(${hearts});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 40%;
+  }
+
+  &:hover .hearts {
+    opacity: 1;
+  }
 `;
 
 export const CardImg = styled.div`
@@ -78,4 +99,9 @@ export const CardImg = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;

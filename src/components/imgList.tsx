@@ -33,9 +33,10 @@ const ImgList = () => {
       <S.CardList>
         {cardData.map((data) => (
           <S.PhotoCard>
-            <S.CardImg src={data.url} />
+            <S.CardImg src={data.url}></S.CardImg>
             <h1>{data.title}</h1>
             <p>{data.text}</p>
+            <div className="hearts" />
           </S.PhotoCard>
         ))}
       </S.CardList>
