@@ -16,6 +16,13 @@ export const PhotoCard = styled.div`
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: "LeferiPoint-WhiteObliqueA";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
 
   background-color: white;
   border-radius: 10px;
@@ -23,18 +30,19 @@ export const PhotoCard = styled.div`
   display: grid;
 
   * {
-    font-family: "Cafe24Ssurround";
     justify-self: center;
     margin: 0;
   }
 
   h1 {
+    font-family: "Cafe24Ssurround";
     padding-top: 10px;
     padding-left: 10px;
     font-size: 20px;
   }
 
   p {
+    font-family: "LeferiPoint-WhiteObliqueA";
     margin-top: 5px;
     color: #808080;
     font-weight: bold;
