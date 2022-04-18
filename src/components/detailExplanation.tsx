@@ -17,7 +17,7 @@ const tempCheck = (temp: string) => {
   } else if (tempInt < 10) {
     return "오늘 물 많이 차가운데 조금만 기다려봐요";
   }
-  return "error";
+  return "물 온도를 재는 중이에요!!";
 };
 
 const DetailExplanation = ({ hangangData }: props) => {
