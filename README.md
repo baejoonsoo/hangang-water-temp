@@ -1,3 +1,3 @@
 # 주기적으로 업데이트되는 한강물 온도
 
-https://baejoonsoo.github.io/hangang-water-temp
+노량진의 한강 수온을 1시간 단위로 측정하여 제공합니다
