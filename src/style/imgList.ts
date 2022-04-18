@@ -50,6 +50,7 @@ export const PhotoCard = styled.div`
     padding-top: 10px;
     padding-left: 10px;
     font-size: 20px;
+    color: #202020;
   }
 
   p {
