@@ -6,24 +6,24 @@ import Slide from "react-reveal/Slide";
 import { useState } from "react";
 
 interface cardDataType {
-  url: string;
+  img: string;
   title: string;
   text: string;
 }
 
 const cardData: cardDataType[] = [
   {
-    url: hgPhoto1,
+    img: hgPhoto1,
     title: "한강공원",
     text: "한강의 아름다움",
   },
   {
-    url: hgPhoto2,
+    img: hgPhoto2,
     title: "한강의 겨울",
     text: "얼어붙은 한강 속 작은 길",
   },
   {
-    url: hgPhoto3,
+    img: hgPhoto3,
     title: "한강의 야경",
     text: "석양 속 도시와 어우러진 한강",
   },
@@ -64,7 +64,7 @@ const Card = ({ data }: { data: cardDataType }) => {
   return (
     <S.PhotoCard>
       <S.CardImg
-        src={data.url}
+        src={data.img}
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}
       ></S.CardImg>
