@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hangang-water-temp/static/css/main.17710108.css",
-    "main.js": "/hangang-water-temp/static/js/main.efb69b41.js",
+    "main.js": "/hangang-water-temp/static/js/main.eb7737e0.js",
     "static/media/hgPhoto3.jpg": "/hangang-water-temp/static/media/hgPhoto3.308b3ed7f9345a1f1ad8.jpg",
     "static/media/hgPhoto2.jpg": "/hangang-water-temp/static/media/hgPhoto2.259436765ec4e8c60c44.jpg",
     "static/media/hgPhoto1.jpg": "/hangang-water-temp/static/media/hgPhoto1.4823d2c88d574565ed57.jpg",
@@ -15,10 +15,10 @@
     "static/media/Logo.svg": "/hangang-water-temp/static/media/Logo.2c9adc2cb6b84da2ad1f917592c0d09f.svg",
     "index.html": "/hangang-water-temp/index.html",
     "main.17710108.css.map": "/hangang-water-temp/static/css/main.17710108.css.map",
-    "main.efb69b41.js.map": "/hangang-water-temp/static/js/main.efb69b41.js.map"
+    "main.eb7737e0.js.map": "/hangang-water-temp/static/js/main.eb7737e0.js.map"
   },
   "entrypoints": [
     "static/css/main.17710108.css",
-    "static/js/main.efb69b41.js"
+    "static/js/main.eb7737e0.js"
   ]
 }
