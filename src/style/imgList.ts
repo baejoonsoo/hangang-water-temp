@@ -59,23 +59,21 @@ export const PhotoCard = styled.div`
     font-weight: bold;
     font-size: 16px;
   }
-  & .hearts {
-    transition: 0.3s;
-    z-index: 3;
-    width: 100px;
-    height: 50px;
-    opacity: 0;
-    position: absolute;
-    background-image: url(${hearts});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 40%;
-  }
+`;
 
-  &:hover .hearts {
-    opacity: 1;
-  }
+export const HoverImg = styled.div`
+  transition: 0.3s;
+  z-index: 3;
+  width: 100px;
+  pointer-events: none;
+  height: 50px;
+  opacity: ${({ isHidden }: { isHidden: boolean }) => (isHidden ? "0" : "1")};
+  position: absolute;
+  background-image: url(${hearts});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 40%;
 `;
 
 export const CardImg = styled.div`

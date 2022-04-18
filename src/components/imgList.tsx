@@ -3,8 +3,15 @@ import hgPhoto1 from "../img/hgPhoto1.jpg";
 import hgPhoto2 from "../img/hgPhoto2.jpg";
 import hgPhoto3 from "../img/hgPhoto3.jpg";
 import Slide from "react-reveal/Slide";
+import { useState } from "react";
 
-const cardData: { url: string; title: string; text: string }[] = [
+interface cardDataType {
+  url: string;
+  title: string;
+  text: string;
+}
+
+const cardData: cardDataType[] = [
   {
     url: hgPhoto1,
     title: "한강공원",
@@ -33,17 +40,38 @@ const ImgList = () => {
       </S.Explanation>
       <Slide bottom cascade>
         <S.CardList>
-          {cardData.map((data) => (
-            <S.PhotoCard>
-              <S.CardImg src={data.url}></S.CardImg>
-              <h1>{data.title}</h1>
-              <p>{data.text}</p>
-              <div className="hearts" />
-            </S.PhotoCard>
+          {cardData.map((data, i) => (
+            <Card data={data} key={i} />
           ))}
         </S.CardList>
       </Slide>
     </S.Page>
+  );
+};
+
+const Card = ({ data }: { data: cardDataType }) => {
+  const [hoverImgHidden, setHoverImgHidden] = useState<boolean>(true);
+
+  const mouseEnter = () => {
+    console.log("enter");
+    setHoverImgHidden(false);
+  };
+
+  const mouseLeave = () => {
+    setHoverImgHidden(true);
+  };
+
+  return (
+    <S.PhotoCard>
+      <S.CardImg
+        src={data.url}
+        onMouseEnter={mouseEnter}
+        onMouseLeave={mouseLeave}
+      ></S.CardImg>
+      <h1>{data.title}</h1>
+      <p>{data.text}</p>
+      <S.HoverImg isHidden={hoverImgHidden} />
+    </S.PhotoCard>
   );
 };
 export default ImgList;
