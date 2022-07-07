@@ -4,7 +4,6 @@ import hgPhoto2 from "../img/hgPhoto2.jpg";
 import hgPhoto3 from "../img/hgPhoto3.jpg";
 import Slide from "react-reveal/Slide";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 interface cardDataType {
   img: string;
